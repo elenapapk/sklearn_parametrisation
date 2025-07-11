@@ -1,7 +1,9 @@
 # sklearn_parametrisation
 
 Interactive Image Preview Tool
-This project is a front-end visualization tool that dynamically updates an image based on two user-controlled sliders. It's designed for testing or showcasing different data outputs — such as variations in clustering algorithms or image parameters — using a static image library.
+
+This project is a front-end visualization tool that dynamically updates an image based on two user-controlled sliders. It is designed for testing or showcasing different data outputs — such as variations in clustering algorithms or image parameters — using a static image library.
+
 
 Features
 Two customizable sliders (radius and points)
