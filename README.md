@@ -2,6 +2,10 @@
 
 This repository provides an interactive front-end tool for visualizing static image outputs generated from machine learning experiments, such as clustering or parameter tuning using scikit-learn. It is designed for demonstration, education, or exploratory analysis where users can dynamically view how parameter changes affect results. Built using only HTML, CSS, and JavaScript, it allows for lightweight deployment and integration with pre-generated image sets.
 
+## Interactive Demo
+
+[Click here to view the HTML interface](https://htmlpreview.github.io/?https://github.com/elenapapk/sklearn_parametrisation/blob/main/index.html)
+
 ---
 
 ## Contents
