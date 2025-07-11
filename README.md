@@ -1,10 +1,18 @@
 # sklearn_parametrisation
 
 
-#Interactive Image Preview Tool
+This repository contains a simple, interactive front-end tool to visualize the effects of parameter changes (such as radius and points) on pre-generated image outputs. It is ideal for rapid testing and demonstration of hyperparameter tuning results in clustering algorithms or other machine learning workflows.
 
-This project is a front-end visualization tool that dynamically updates an image based on two user-controlled sliders. It is designed for testing or showcasing different data outputs — such as variations in clustering algorithms or image parameters — using a static image library.
+Developed using only HTML, CSS, and JavaScript, this tool provides an easy way to preview static results without needing a backend server or frameworks.
 
+📁 Contents
+index.html
+Purpose: The main structure and interface of the application.
+Features:
+
+Contains sliders for selecting parameter values (radius and points)
+
+A “Run” button to trigger image preview update
 
 #Features
 Two customizable sliders (radius and points)
