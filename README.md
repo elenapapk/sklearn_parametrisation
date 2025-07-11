@@ -1,72 +1,54 @@
 # sklearn_parametrisation
 
+This repository provides an interactive front-end tool for visualizing static image outputs generated from machine learning experiments, such as clustering or parameter tuning using scikit-learn. It is designed for demonstration, education, or exploratory analysis where users can dynamically view how parameter changes affect results. Built using only HTML, CSS, and JavaScript, it allows for lightweight deployment and integration with pre-generated image sets.
 
-This repository contains a simple, interactive front-end tool to visualize the effects of parameter changes (such as radius and points) on pre-generated image outputs. It is ideal for rapid testing and demonstration of hyperparameter tuning results in clustering algorithms or other machine learning workflows.
+---
 
-Developed using only HTML, CSS, and JavaScript, this tool provides an easy way to preview static results without needing a backend server or frameworks.
+## Contents
 
-📁 Contents
-index.html
-Purpose: The main structure and interface of the application.
-Features:
+### `index.html`  
+**Purpose:** Defines the main layout and interactive interface for the tool.
 
-Contains sliders for selecting parameter values (radius and points)
+**Features:**
+- Two parameter sliders: `radius` and `points`
+- “Run” button to trigger visual update
+- Live image preview based on slider selection
 
-A “Run” button to trigger image preview update
+---
 
-#Features
-Two customizable sliders (radius and points)
+### `index.css`  
+**Purpose:** Provides the styling for the layout and interface elements.
 
-Dynamically updates the image preview based on selected values
+**Features:**
+- Clean responsive design
+- Basic styling for interactive controls
+- Optional support for vector icons and custom assets
 
-Lightweight, pure HTML/CSS/JavaScript (no frameworks)
+---
 
-Easy to expand or integrate with machine learning outputs
+### `script.js`  
+**Purpose:** Contains the logic to handle parameter input and update image previews.
 
+**Features:**
+- Reads values from both sliders
+- Constructs filenames based on selected parameters
+- Dynamically updates preview with corresponding image from `/used/`
 
-#File Structure
+---
 
-index.html — main interface and layout
+### `/used/`  
+**Purpose:** Folder containing image assets used for previews.
 
-index.css — styling and responsive design
+**Requirements:**
+- Image files must follow the naming format: `radius_points.png`  
+  *(e.g., `2_3.png`, `1_0.png`)*
 
-script.js — logic for handling slider input and image updates
+---
 
-./used/ — folder where images must be named using the format radius_points.png (e.g., 2_3.png)
+## Example Use Cases
 
-
-#Usage
-
-Place your image assets in a /used folder and name them like:
-
-bash
-Copy
-Edit
-./used/2_3.png
-./used/1_0.png
-Open index.html in a browser.
-
-Use the sliders to select values.
-
-Click “Run” to update the displayed image.
-
-
-#Example Use Case
-
-This type of interface can be used in:
-
-Visualizing hyperparameter outputs (e.g., DBSCAN clustering)
-
-Educational interactive demos
-
-Exploratory design testing
-
-
-#Assets Required
-
-Make sure to include:
-
-A folder named /used/ with all the required images
-
-
-Optional: /assets/ for vector graphics if included in index.css
+This tool can be adapted for:
+- Visualizing DBSCAN or other clustering hyperparameter effects
+- Comparing static model outputs based on tuning choices
+- Creating interactive demos for ML education
+- UI prototypes for ML visualization tools
