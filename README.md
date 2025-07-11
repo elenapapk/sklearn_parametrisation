@@ -2,10 +2,6 @@
 
 This repository provides an interactive front-end tool for visualizing static image outputs generated from machine learning experiments, such as clustering or parameter tuning using scikit-learn. It is designed for demonstration, education, or exploratory analysis where users can dynamically view how parameter changes affect results. Built using only HTML, CSS, and JavaScript, it allows for lightweight deployment and integration with pre-generated image sets.
 
-You can check it here:
-
-file:///C:/Users/user/Desktop/UNI%20IAAC/2%20TERM/1%20hackathon/density/hackathon_1/2/index.html
-
 ---
 
 ## Contents
